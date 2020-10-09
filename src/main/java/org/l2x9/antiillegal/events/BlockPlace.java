@@ -22,7 +22,7 @@ public class BlockPlace implements Listener {
     @EventHandler
     @AntiIllegal(EventName = "BlockPlaceEvent")
     public void onPlace(BlockPlaceEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.Block-Place-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.Block-Place-Enabled")) {
             if (itemUtils.isIllegal(event.getItemInHand())) {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().getItemInMainHand().setType(Material.AIR);

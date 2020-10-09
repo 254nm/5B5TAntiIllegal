@@ -17,7 +17,7 @@ public class InventoryClose implements Listener {
     @EventHandler
     @AntiIllegal(EventName = "InventoryCloseEvent")
     public void onInventoryClose(InventoryCloseEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.InventoryClose-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.InventoryClose-Enabled")) {
             Inventory inv = event.getInventory();
             utils.deleteIllegals(inv);
             Inventory playerInv = event.getPlayer().getInventory();

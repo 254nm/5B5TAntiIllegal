@@ -13,7 +13,7 @@ public class InventoryOpen implements Listener {
     @EventHandler
     @AntiIllegal(EventName = "InventoryCloseEvent")
     public void onInventoryClose(InventoryOpenEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.InventoryOpen-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.InventoryOpen-Enabled")) {
             Inventory inv = event.getInventory();
             utils.deleteIllegals(inv);
         }

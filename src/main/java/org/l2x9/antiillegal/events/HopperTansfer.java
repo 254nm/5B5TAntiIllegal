@@ -18,7 +18,7 @@ public class HopperTansfer implements Listener {
     @EventHandler
     @AntiIllegal(EventName = "InventoryMoveItemEvent")
     public void onInventoryClose(InventoryMoveItemEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.HopperTransfer-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.HopperTransfer-Enabled")) {
             Inventory inv = event.getSource();
             if (inv.getContents() != null) {
                 for (ItemStack item : inv.getStorageContents()) {

@@ -12,7 +12,7 @@ public class PlayerScroll implements Listener {
 
     @EventHandler
     public void onItemMove(PlayerItemHeldEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.PlayerHotbarMove-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.PlayerHotbarMove-Enabled")) {
             Player player = event.getPlayer();
             itemUtils.deleteIllegals(player.getInventory());
         }

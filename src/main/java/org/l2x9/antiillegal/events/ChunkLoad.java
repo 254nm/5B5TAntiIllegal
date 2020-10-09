@@ -14,7 +14,7 @@ public class ChunkLoad implements Listener {
     @EventHandler
     @AntiIllegal(EventName = "ChunkLoadEvent")
     public void onLoad(ChunkLoadEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.ChunkLoad-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.ChunkLoad-Enabled")) {
             for (BlockState state : event.getChunk().getTileEntities()) {
                 if (state instanceof Container) {
                     Container container = (Container) state;

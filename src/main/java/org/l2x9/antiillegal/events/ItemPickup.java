@@ -16,7 +16,7 @@ public class ItemPickup implements Listener {
     @EventHandler
     @AntiIllegal(EventName = "PlayerPickupItemEvent")
     public void onPickup(PlayerPickupItemEvent event) {
-        if (Main.getPlugin().getConfig().getBoolean("Antiillegal.ItemPickup-Enabled")) {
+        if (Main.getPlugin().getConfig().getBoolean("AntiIllegal.ItemPickup-Enabled")) {
             ItemStack item = event.getItem().getItemStack();
             if (ut.isEnchantedBlock(item) || ut.hasIllegalNBT(item) || ut.hasIllegalEnchants(item)
                     || ut.isOverstacked(item) || ut.isIllegal(item)) {
