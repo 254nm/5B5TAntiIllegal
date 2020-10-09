@@ -4,3 +4,6 @@ main: org.l2x9.antiillegal.Antiillegal
 authors: [ 254n_m ]
 description: Deletes fucking retarded illegals
 website: https://www.l2x9.org
+commands:
+  airl:
+    description: Reload config

@@ -15,6 +15,7 @@ public final class Main extends JavaPlugin {
         pluginManager.registerEvents(new InventoryOpen(), this);
         pluginManager.registerEvents(new ItemPickup(), this);
         pluginManager.registerEvents(new PlayerScroll(), this);
+        getCommand("airl").setExecutor(new ReloadConfig());
         getLogger().info("5B5T AntiIllegal by 254n_m enabled");
         saveDefaultConfig();
 
